@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/home/abror/Gamedev/Voxel_Engine",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-I.", "-Iinclude", "-D_GNU_SOURCE=1", "-D_REENTRANT", "-I", "/usr/include/SDL2", "-DNDEBUG", "-o", "build/.objs/Voxel-Engine/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]

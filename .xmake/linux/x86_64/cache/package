@@ -1,0 +1,115 @@
+{
+    glew = {
+        __requirestr = "glew",
+        shared = true,
+        libfiles = {
+            "/usr/lib/libGLEW.so",
+            "/usr/lib/libGL.so",
+            "/usr/lib/libX11.so",
+            "/usr/lib/libGLU.so",
+            "/usr/lib/libOpenGL.so",
+            "/usr/lib/libX11-xcb.so",
+            "/usr/lib/libxcb-composite.so",
+            "/usr/lib/libxcb-damage.so",
+            "/usr/lib/libxcb-dbe.so",
+            "/usr/lib/libxcb-dpms.so",
+            "/usr/lib/libxcb-dri2.so",
+            "/usr/lib/libxcb-dri3.so",
+            "/usr/lib/libxcb-glx.so",
+            "/usr/lib/libxcb-present.so",
+            "/usr/lib/libxcb-randr.so",
+            "/usr/lib/libxcb-record.so",
+            "/usr/lib/libxcb-render.so",
+            "/usr/lib/libxcb-res.so",
+            "/usr/lib/libxcb-screensaver.so",
+            "/usr/lib/libxcb-shape.so",
+            "/usr/lib/libxcb-shm.so",
+            "/usr/lib/libxcb-sync.so",
+            "/usr/lib/libxcb-xf86dri.so",
+            "/usr/lib/libxcb-xfixes.so",
+            "/usr/lib/libxcb-xinerama.so",
+            "/usr/lib/libxcb-xinput.so",
+            "/usr/lib/libxcb-xkb.so",
+            "/usr/lib/libxcb-xtest.so",
+            "/usr/lib/libxcb-xv.so",
+            "/usr/lib/libxcb-xvmc.so",
+            "/usr/lib/libxcb.so",
+            "/usr/lib/libXau.so",
+            "/usr/lib/libXdmcp.so"
+        },
+        version = "2.3.1",
+        envs = {
+            PATH = {
+                "/home/abror/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin",
+                "/home/abror/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin",
+                "/home/abror/.xmake/packages/p/python/3.13.2/7dbc4c2192884093912e9407517d19cf/bin",
+                "/home/abror/.xmake/packages/p/python/3.13.2/7dbc4c2192884093912e9407517d19cf/bin",
+                "/home/abror/.xmake/packages/p/python/3.13.2/7dbc4c2192884093912e9407517d19cf/Scripts"
+            },
+            LD_LIBRARY_PATH = {
+                "/home/abror/.xmake/packages/l/libx11/1.8.12/5b3492e889e848b2b511e3f3031c5538/lib"
+            },
+            PYTHONPATH = {
+                "/home/abror/.xmake/packages/p/python/3.13.2/7dbc4c2192884093912e9407517d19cf/lib/python3.13/site-packages"
+            }
+        },
+        links = {
+            "GLEW",
+            "GL",
+            "X11",
+            "GLU",
+            "OpenGL",
+            "X11-xcb",
+            "xcb",
+            "xcb-composite",
+            "xcb-damage",
+            "xcb-dbe",
+            "xcb-dpms",
+            "xcb-dri2",
+            "xcb-dri3",
+            "xcb-glx",
+            "xcb-present",
+            "xcb-randr",
+            "xcb-record",
+            "xcb-render",
+            "xcb-res",
+            "xcb-screensaver",
+            "xcb-shape",
+            "xcb-shm",
+            "xcb-sync",
+            "xcb-xf86dri",
+            "xcb-xfixes",
+            "xcb-xinerama",
+            "xcb-xinput",
+            "xcb-xkb",
+            "xcb-xtest",
+            "xcb-xv",
+            "xcb-xvmc",
+            "Xau",
+            "Xdmcp"
+        },
+        __enabled = true
+    },
+    sdl2 = {
+        shared = true,
+        __requirestr = "sdl2",
+        sysincludedirs = "/usr/include/SDL2",
+        defines = {
+            "_GNU_SOURCE=1",
+            "_REENTRANT"
+        },
+        libfiles = "/usr/lib/libSDL2.so",
+        version = "2.32.64",
+        links = "SDL2",
+        __enabled = true
+    },
+    imgui = {
+        __requirestr = "imgui",
+        shared = true,
+        linkdirs = "/usr/lib",
+        version = "1.91.6",
+        libfiles = "/usr/lib/libimgui.so",
+        links = "imgui",
+        __enabled = true
+    }
+}
